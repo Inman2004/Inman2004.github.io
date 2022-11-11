@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar{
+  width:10px;
+}
+::-webkit-scrollbar-track{
+  background:#C40089;
+  border-radius:50px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#110055;
+  border-radius:50px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+body{
+    background-color: #1E1E1E;
+}
+.container{
+    width: 100%;
+   background: linear-gradient(121.28deg, #31BC00 0%, #000000 100%), linear-gradient(180deg, #5200FF 0%, #1A0050 100%), linear-gradient(341.1deg, #FF0000 7.52%, #1700A4 77.98%), radial-gradient(49.82% 80.51% at 49.82% 50%, #5A0069 0%, #FF3D00 100%), radial-gradient(50% 72.12% at 50% 50%, #EB00FF 0%, #110055 100%);
+background-blend-mode: color-dodge, overlay, difference, difference, normal;
+    overflow-x: hidden;
+    color: white;
+}
+.container header{
+    width: 100%;
+    height: 9vh;
+    padding: 10px 60px;
+    justify-content: space-between;
+}
+header .logo{
+    font-size: 45px;
+    font-weight: 600;
+    width: 30%;
+    margin-left: 100px;
+}
+.logo span{
+    color: #C40089;
+    font-size: 70px;
+}
+header nav{
+    width: 70%;
+    display: flex;
+}
+nav #search{
+    width: 17%;
+    position: relative;
+}
+#search i{
+    position: absolute;
+    color: #C40089;
+    top: 8px;
+    font-weight: bolder;
+    font-size: 19px;
+    left: 8px;
+}
+nav input{
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 8px 15px;
+    padding-left: 33px;
+    border:2px solid #C40089;
+    font-size: 16px;
+    height: 13px;
+    width: 100%;
+}
+header nav ul{
+    justify-content: center;
+    width: 70%;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 25px;
+    font-weight:500;
+    color: white;
+}
+nav ul li a:hover{
+    color: #EB00FF;
+}
+
+.container .main{
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+}
+.main .main-one{
+    width: 45%;
+    padding: 40px 30px;
+    padding-left: 150px;
+}
+.main-one h1{
+    font-size: 80px;
+}
+.main-one span{
+    font-weight: 600;
+    font-size: 60px;
+    color: #EB00FF;
+}
+.main-one p{
+    font-size: 17px;
+    padding: 10px 0;
+}
+.main-one button{
+  padding: 1.3em 3em;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+
+}
+.main-one button:hover{
+    background-color: #c4239c;
+  box-shadow: 0px 15px 20px rgba(229, 46, 153, 0.459);
+  color: #fff;
+  transform: translateX(-7px);
+}
+.main-one button:active{
+     transform: translateX(-1px);
+}
+.main .main-two{
+    width: 50%;
+}
+.main-two img{
+    width: 550px;
+}
+.projects{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding: 150px 180px;
+}
+.projects h1{
+    font-size: 50px;
+    line-height: 49px;
+    font-weight: 800;
+}
+.projects h1 span{
+    color: #C40089;
+}
+.projects p{
+    width: 35%;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.projects .button{
+    background-color: #C40089;
+    padding: 9px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+.projects .button:hover{
+    transform: scale(1.05);
+}
+.projects-div{
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    width:300px;
+    height: 360px;
+    position: absolute;
+    z-index: 100;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.2s ease-out;
+}
+.projects-div:hover{
+    transform: rotate(10deg);
+}
+.div-1{
+    top: 100px;
+    left: 850px;
+}
+.div-2{
+    bottom: 10px;
+    right: 1000px;
+}
+.div-3{
+    bottom: 10px;
+    right: 600px;
+}
+.projects-div h3{
+    font-size: 23px;
+    padding:5px 30px;
+    color: #C40089;
+    font-family: 'Roboto', sans-serif;
+}
+.projects-div p{
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+}
+.projects-div img{
+    width: 100px;
+    margin: 6px 0;
+    border-radius: 50%;
+}
+.projects button{
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: 1px solid #C40089;
+    padding: 7px 25px;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-top: 25px;
+    border-radius: 50px;
+}
+
+.about{
+    width: 100%;
+    height: 400px;
+    padding: 30px 50px;
+    justify-content: center;
+}
+.about-one{
+    width: 55%;
+    padding: 0 60px;
+}
+.about-one h1{
+    font-size: 50px;
+}
+.about-one p{
+    padding: 10px 0;
+    width: 95%;
+    text-align: justify;
+}
+.about-one span{
+    font-size: 30px;
+    color: #C40089;
+}
+.about-two{
+    width: 40%;
+}
+.about-two img{
+    width: 400px;
+}
+.btns{
+    margin: 15px 0;
+}
+.btns button{
+    background-color: #C40089;
+    padding: 8px 17px;
+    font-size:18px;
+    font-weight: 600;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+    outline: none;
+    border: none;
+}
+.btns button:hover{
+    transform: scale(1.02);
+}
+
+.contact{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.31);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.contact h1{
+    font-size: 50px;
+}
+.contact h1 span{
+    color: #C40089;
+}
+.contact .box{
+    flex-direction: column;
+    margin-top: 40px;
+}
+.box div{
+    width: 40%;
+    margin: auto;
+}
+/*.contact .box input{
+    width: 90%;
+    margin: auto;
+    outline: none;
+    border: none;
+    background-color: #EB00FF;
+    padding: 9px 40px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+}*/
+.box div{
+    position: relative;
+}
+.box div i{
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    top: 20px;
+    left: 20px;
+}
+.contact .box textarea{
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 10px 30px;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 1px solid #EB00FF;
+    outline: none;
+    margin-left: 30px;
+}
+.send{
+    background: linear-gradient(#EB00FF , #C40089);
+    font-size: 19px !important;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 30px auto !important;
+}
+
+footer{
+    justify-content: space-between;
+    padding: 10px 70px;
+    background: linear-gradient(#EB00FF , #C40089);
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+footer .social i{
+    font-size: 25px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.social i:hover{
+    color: #110055;
+}
+/*e-mail - password*/
+.form {
+ --width-of-input: 200px;
+ --border-height: 1px;
+ --border-before-color: rgba(221, 221, 221, 0.39);
+ --border-after-color: #EB00FF;
+ --input-hovered-color: #4985e01f;
+ position: relative;
+ width: var(--width-of-input);
+}
+.input {
+ color: #fff;
+ font-size: 0.9rem;
+ background-color: transparent;
+ width: 100%;
+ box-sizing: border-box;
+ padding-inline: 0.5em;
+ padding-block: 0.7em;
+ border: none;
+ border-bottom: var(--border-height) solid var(--border-before-color);
+}
+/* styling of animated border */
+.input-border {
+ position: absolute;
+ background: var(--border-after-color);
+ width: 0%;
+ height: 2px;
+ bottom: 0;
+ left: 0;
+ transition: 0.3s;
+}
+/* Hover on Input */
+input:hover {
+ background: var(--input-hovered-color);
+}
+
+input:focus {
+ outline: none;
+}
+/* here is code of animated border */
+input:focus ~ .input-border {
+ width: 100%;
+}
+/* === if you want to do animated border on typing === */
+/* remove input:focus code and uncomment below code */
+/* input:valid ~ .input-border{
+  width: 100%;
+} */
