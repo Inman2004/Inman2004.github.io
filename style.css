@@ -243,6 +243,45 @@ nav ul li a:hover{
     border-radius: 50px;
 }
 
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select files';
+  color: white;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #C40089;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 7px 25px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  padding: 7px 25px;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 0;
+  margin-top: 25px;
+    border-radius: 50px;
+    margin-left: 20%;
+}
+.custom-file-input:hover::before {
+  
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+
 .about{
     width: 100%;
     height: 400px;
@@ -345,13 +384,23 @@ nav ul li a:hover{
     margin-left: 30px;
 }
 .send{
-    background: linear-gradient(#EB00FF , #C40089);
-    font-size: 19px !important;
-    font-weight: 600;
+    background-color: transparent;
     cursor: pointer;
-    margin: 30px auto !important;
+    color: white;
+    outline: none;
+    border: 1px solid #C40089;
+    padding: 7px 25px;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-top: 25px;
+    border-radius: 50px;
+    transition: all ease-out 0.2s;
 }
-
+.send:hover{
+    transform: scale(1.2);
+}
 footer{
     justify-content: space-between;
     padding: 10px 70px;
@@ -412,7 +461,62 @@ input:focus ~ .input-border {
  width: 100%;
 }
 /* === if you want to do animated border on typing === */
-/* remove input:focus code and uncomment below code */
-/* input:valid ~ .input-border{
+/* remove input:focus code and uncomment below code 
+ input:valid ~ .input-border{
   width: 100%;
 } */
+.notification{
+position:relative;
+ display:inline-block;
+ max-width:300px;
+ padding:20px 15px;
+ border-radius:4px;
+ background-color:#5A0069;
+ color:afor59;
+ box-shadow:01px 10px
+ rgba(e,e,8,1);
+ transform:translateY(30px);    
+ opacity:0;
+ visibility:hidden;
+ animation:fade 4s Linear
+ forwards;
+}
+ 
+.progress{
+ position:absolute;
+ left:5px;
+ bottom:5px;
+ width:0;
+ height:3px;
+ background-image:
+ Linear-gradient(to right,
+ #EB00FF,#C40089);
+ border-radius:4px;
+ animation: progress 3s .25s
+ Linear forwards;    
+}
+
+@keyframes fade{
+    5%{
+        opacity:1;
+        visibility:visible;
+        transform:translatey(0px);
+    }
+    90% {
+        opacity:1;
+        transform:translateY(0px);
+    }
+    95%{
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+}
+@keyframes progress
+{
+   to{
+        width:calc(100%-10px);
+    }
+}
